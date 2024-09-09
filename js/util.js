@@ -10,7 +10,7 @@
  	async: false, // 非同期通信フラグ
   	}).then(
   	function (json) {
-
+		return json;
 	});
 
   
