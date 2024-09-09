@@ -13,6 +13,7 @@
 	 console.error('Error:', error);
 	});
 
+  return data;
 }
 
 function isExistFile(file) {
