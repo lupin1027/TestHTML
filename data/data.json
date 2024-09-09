@@ -1,6 +1,6 @@
 ﻿{
   {"name":"東京", "category":""},
-  {"name":"大阪", "category":""}.
+  {"name":"大阪", "category":""},
   {"name":"名古屋", "category":""},
   {"name":"福岡", "category":""},
   {"name":"京都", "category":""},
@@ -8,4 +8,4 @@
   {"name":"札幌", "category":""},
   {"name":"沖縄", "category":""},
   {"name":"千葉", "category":""}
-};
+}
