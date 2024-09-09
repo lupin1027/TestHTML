@@ -20,6 +20,17 @@ window.addEventListener('DOMContentLoaded', function() {
       
       console.log(data);
     };
+
+    data = readJson(path);
+
+    if(data == null || data == undefined){
+    	console.log('data読込失敗');
+    }
+    else{
+	console.log('data読込成功');
+    }
+      
+    console.log(data);
 });
 
 function myFunction() {
