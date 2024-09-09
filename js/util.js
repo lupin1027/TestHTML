@@ -2,17 +2,14 @@
 
   console.log(filePath);
   
-  $.ajax({
-  	// ajax読み込みの設定
-  	type: "GET",
-  	url: "data.json", // jsonまでのファイルパス
- 	dataType: "json", // ファイル形式
- 	async: false, // 非同期通信フラグ
-  	}).then(
-  	function (json) {
-		return json;
+  fetch(filePath)
+	.then(function(response){
+		return response.json();
+	})
+	.then(function(data){
+		// JSON全体
+		console.log(data);	
 	});
-
   
   /*
   $.getJSON(filePath, function(data) {
