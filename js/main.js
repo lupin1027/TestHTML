@@ -2,7 +2,7 @@
 
 window.addEventListener('DOMContentLoaded', function() {
 
-    data = readJson('./TestHTML/data.json');
+    data = readJson('data.json');
 
     if(data == null){
     	console.log('data読込失敗');
