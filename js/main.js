@@ -5,7 +5,9 @@ window.addEventListener('DOMContentLoaded', function() {
     const path = './data/data.json';
 
     var req = new XMLHttpRequest();
+    rep.responseType = 'json';
     req.open('GET', path, true);
+    req.send(null);
 
     req.onload = function() {
       data = JSON.parse(req.responseText);
