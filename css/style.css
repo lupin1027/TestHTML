@@ -1,0 +1,86 @@
+/* リセットCSS（気にしないでください） */
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+/* 大枠（気にしないでください） */
+body {
+  width: 100%;
+}
+#wrapper {
+  width: 80%;
+  margin: 0 auto 0 20px;
+}
+
+/* 見出し ここから */
+h1 {
+    height: auto;
+    margin: 40px 0 0 20px;
+    padding: 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: 0;
+    line-height: 1.5;
+}
+ 
+h2 {
+  margin: 60px 0 35px 0;
+  padding: 0 0 0 15px;
+  font-size: 26px;
+  font-weight: bold;
+  border-width: 0 0 0 4px;
+  border-style: solid;
+  border-color: #0f5296;
+}
+ 
+h3 {
+    padding-bottom: 10px;
+  font-size: 22px;
+    font-weight: bold;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+/* ここまで */
+
+#myInput {
+  width: 20%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul#myUL li {
+  width: 30%;
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #c8e4ff; /* Add a hover effect to all links, except for headers */
+}
