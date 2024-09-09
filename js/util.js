@@ -2,16 +2,20 @@
 
   console.log(filePath);
 
-  let xhr = new XMLHttpRequest();
-  xhr.open('GET', filePath, true);
+  var req = new JSONHttpRequest();
+  req.open('GET', filePath, true);
 
-  xhr.onload = function() {
-    var jsonResponse = JSON.parse(xhr.responseText);
+  req.onload = function() {
+    var jsonResponse = JSON.parse(req.responseText);
     console.log(jsonResponse);
     return jsonResponse;
   };
 
-  xhr.send(null);
+  req.onerror = funciton() {
+    console.log('Error');
+  };
+
+  req.send(null);
   
   /*
   $.getJSON(filePath, function(data) {
