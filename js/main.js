@@ -1,36 +1,29 @@
-﻿var data;
+﻿
+const dataPath = './data/data.json';
+var data;
 
 window.addEventListener('DOMContentLoaded', function() {
 
-    const path = './data/data.json';
+    fetch(dataPath)
+    .then(response => response.text())
+    .then(json => {
+     console.log(json);
+     data = JSON.parse(json);
 
-    var req = new XMLHttpRequest();
-    req.open('GET', path, true);
-    req.send(null);
+     if(data == null)
+     {
+      console.log('data read failed.');
+     }
+     else
+     {
+      console.log('data read success.');
+     }
 
-    req.onload = function() {
-      data = JSON.parse(req.responseText);
-
-      if(data == null || data == undefined){
-    	console.log('data読込失敗');
-      }
-      else{
-	console.log('data読込成功');
-      }
-      
-      console.log(data);
-    };
-
-    data = readJson(path);
-
-    if(data == null || data == undefined){
-    	console.log('data読込失敗');
-    }
-    else{
-	console.log('data読込成功');
-    }
-      
-    console.log(data);
+     console.log(data);
+    })
+    .catch(error => {
+     console.error('Error:', error);
+    });
 });
 
 function myFunction() {
