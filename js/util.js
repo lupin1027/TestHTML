@@ -6,9 +6,9 @@
   xhr.open('GET', filePath, true);
 
   xhr.onload = function() {
-    let response = xhr.response;
-    console.log(response);
-    return responseJson;
+    var jsonResponse = JSON.parse(xhr.responseText);
+    console.log(jsonResponse);
+    return jsonResponse;
   };
 
   xhr.send(null);
