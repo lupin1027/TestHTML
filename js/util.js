@@ -8,7 +8,7 @@
   xhr.onload = () => {
     let responseJson = JSON.parse(xhr.response);
     return responseJson;
-  }
+  };
 
   xhr.send();
   
