@@ -3,14 +3,15 @@
   console.log(filePath);
 
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', filePath);
+  xhr.open('GET', filePath, true);
 
-  xhr.onload = () => {
-    let responseJson = JSON.parse(xhr.response);
+  xhr.onload = function() {
+    let response = xhr.response;
+    console.log(response);
     return responseJson;
   };
 
-  xhr.send();
+  xhr.send(null);
   
   /*
   $.getJSON(filePath, function(data) {
