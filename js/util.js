@@ -2,8 +2,7 @@
 
   console.log(filePath);
   
-  $.get(filePath, function(data) {
-    var data = $.parseJson(data);
+  $.getJSON(filePath, function(data) {
     return data;
   });
 }
