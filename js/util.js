@@ -2,6 +2,7 @@
 
   console.log(filePath);
 
+/*
   var req = new XMLHttpRequest();
   req.open('GET', filePath, true);
 
@@ -12,12 +13,11 @@
   };
 
   req.send(null);
+*/  
   
-  /*
   $.getJSON(filePath, function(data) {
     return data;
   });
-  */
 
 }
 
