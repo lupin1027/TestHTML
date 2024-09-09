@@ -1,15 +1,16 @@
 ﻿function readJson(filePath) {
 
   console.log(filePath);
-  
-  fetch(filePath)
-	.then(function(response){
-		return response.json();
-	})
-	.then(function(data){
-		// JSON全体
-		console.log(data);	
-	});
+
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', filePath);
+
+  xhr.onload = () => {
+    let responseJson = JSON.parse(xhr.response);
+    return responseJson;
+  }
+
+  xhr.send();
   
   /*
   $.getJSON(filePath, function(data) {
