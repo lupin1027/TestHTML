@@ -2,7 +2,7 @@
 
   console.log(filePath);
 
-  var req = new JSONHttpRequest();
+  var req = new XMLHttpRequest();
   req.open('GET', filePath, true);
 
   req.onload = function() {
