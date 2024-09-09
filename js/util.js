@@ -11,10 +11,6 @@
     return jsonResponse;
   };
 
-  req.onerror = funciton() {
-    console.log('Error');
-  };
-
   req.send(null);
   
   /*
