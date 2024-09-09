@@ -2,22 +2,24 @@
 
   console.log(filePath);
 
-/*
   var req = new XMLHttpRequest();
+  var data;
   req.open('GET', filePath, true);
 
   req.onload = function() {
-    var jsonResponse = JSON.parse(req.responseText);
-    console.log(jsonResponse);
-    return jsonResponse;
+    var data = JSON.parse(req.responseText);
+    console.log(data);
   };
 
   req.send(null);
-*/  
-  
+ 
+  return data;
+
+  /*
   $.getJSON(filePath, function(data) {
     return data;
   });
+  */
 
 }
 
