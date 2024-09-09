@@ -2,16 +2,23 @@
 
 window.addEventListener('DOMContentLoaded', function() {
 
-    var data = readJson('./data/data.json');
+    const path = './data/data.json';
 
-    if(data == null || data == undefined){
+    var req = new XMLHttpRequest();
+    req.open('GET', path, true);
+
+    req.onload = function() {
+      data = JSON.parse(req.responseText);
+
+      if(data == null || data == undefined){
     	console.log('data読込失敗');
-    }
-    else{
+      }
+      else{
 	console.log('data読込成功');
-    }
-
-    console.log(data);
+      }
+      
+      console.log(data);
+    };
 });
 
 function myFunction() {

@@ -7,12 +7,12 @@
   req.open('GET', filePath, true);
 
   req.onload = function() {
-    var data = JSON.parse(req.responseText);
-    console.log(data);
+    data = JSON.parse(req.responseText);   
   };
 
   req.send(null);
  
+  console.log(data);
   return data;
 
   /*
