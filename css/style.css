@@ -1,10 +1,10 @@
-/* ƒŠƒZƒbƒgCSSi‹C‚É‚µ‚È‚¢‚Å‚­‚¾‚³‚¢j */
+ï»¿/* ãƒªã‚»ãƒƒãƒˆCSSï¼ˆæ°—ã«ã—ãªã„ã§ãã ã•ã„ï¼‰ */
 * {
   margin: 0;
   padding: 0;
 }
  
-/* ‘å˜gi‹C‚É‚µ‚È‚¢‚Å‚­‚¾‚³‚¢j */
+/* å¤§æž ï¼ˆæ°—ã«ã—ãªã„ã§ãã ã•ã„ï¼‰ */
 body {
   width: 100%;
 }
@@ -13,7 +13,7 @@ body {
   margin: 0 auto 0 20px;
 }
 
-/* Œ©o‚µ ‚±‚±‚©‚ç */
+/* è¦‹å‡ºã— ã“ã“ã‹ã‚‰ */
 h1 {
     height: auto;
     margin: 40px 0 0 20px;
@@ -43,7 +43,7 @@ h3 {
   border-style: solid;
   border-color: #e6e6e6;
 }
-/* ‚±‚±‚Ü‚Å */
+/* ã“ã“ã¾ã§ */
 
 #myInput {
   width: 20%; /* Full-width */

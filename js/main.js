@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     data = readJson('data.json');
 
-    if(data == null){
+    if(data == null || data == undefined){
     	console.log('data読込失敗');
     }
     else{
