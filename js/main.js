@@ -20,6 +20,9 @@ window.addEventListener('DOMContentLoaded', function() {
      }
 
      console.log(data);
+
+     count = this.document.getElementById('itemcount');
+     count.textContent = 'アイテム数: ' + data.length;
     })
     .catch(error => {
      console.error('Error:', error);
